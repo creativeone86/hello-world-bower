@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example page</title>
+	<link rel="stylesheet" href="hello-world.css">
+</head>
+<body ng-app="ExampleApp">
+
+<div ng-controller="MainCtrl">
+	<hello-world content="content"></hello-world>
+</div>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="hello-world.js"></script>
+<script>
+	angular.module('ExampleApp', ['io.hello-world'])
+			.controller('MainCtrl', function($scope) {
+				$scope.content = 'Hello world from directive';
+			});
+</script>
+</body>
+</html>

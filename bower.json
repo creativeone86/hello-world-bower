@@ -5,7 +5,7 @@
     "Yordan Georgiev <iordan340@gmail.com>"
   ],
   "description": "Just testing",
-  "main": "",
+  "main": "hello-world.js",
   "moduleType": [],
   "keywords": [
     "testing"
